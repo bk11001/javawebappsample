@@ -13,6 +13,8 @@ node {
   }
   
   stage('build') {
+    echo 'Hello from maven-nodejs slave'
+    sh 'mvn -version'
     sh 'mvn clean package'
   }
   
