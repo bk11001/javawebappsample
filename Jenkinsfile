@@ -22,7 +22,7 @@ node {
     def resourceGroup = 'DainfoWebAppTest002' 
     def webAppName = 'DainfoWebAppTest002'
     // login Azure
-    withCredentials([azureServicePrincipal('d011af3b-38ff-459b-9a69-59b471c9a47c')]) {
+    withCredentials([azureServicePrincipal('4941ea05-b101-4a77-99b7-c65f9e72b94e')]) {
       sh '''
         az login --service-principal -u $AZURE_CLIENT_ID -p $AZURE_CLIENT_SECRET -t $AZURE_TENANT_ID
         az account set -s $AZURE_SUBSCRIPTION_ID
